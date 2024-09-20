@@ -1,552 +1,704 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="La Manne des Braves SARL - Votre partenaire de confiance pour les services de douane, sous-traitance, et construction en République Démocratique du Congo. Nous offrons des solutions complètes et innovantes pour répondre à vos besoins en import-export, logistique, et gestion de personnel.">
-  <meta name="keywords"
-    content="douane, import, export, logistique, sous-traitance, construction, génie civil, RDC, services douaniers, gestion de personnel, douane RDC, transit douanier RDC, ressources humaines RDC, recrutement RDC, formation RH RDC, construction RDC, génie civil RDC">
-  <meta name="author" content="JohnKat MJ">
-  <title>La Manne des Braves SARL | Services Douaniers et Plus</title>
-  <meta property="og:title" content="La Manne des Braves SARL | Services Douaniers et Plus">
-  <meta property="og:description"
-    content="Votre partenaire de confiance pour les services de douane, sous-traitance, et construction en République Démocratique du Congo.">
+    <meta charset="utf-8">
+    <title>La Manne des Braves</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <meta property="og:url" content="lamanne...">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="La Manne des Braves SARL | Services Douaniers et Plus">
-  <meta name="twitter:description"
-    content="Votre partenaire de confiance pour les services de douane, sous-traitance, et construction en République Démocratique du Congo.">
-  <meta name="robots" content="index, follow">
-  <style>
-    button[data-toggle-navbar][data-is-open="true"] #line-1 {
-      transform: rotate(45deg) translateY(0.375rem);
-    }
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    button[data-toggle-navbar][data-is-open="true"] #line-2 {
-      transform: rotate(-45deg) translateY(-0.375rem);
-    }
-  </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <script  src="assets/main.js"></script>
-  <link rel="stylesheet" href="assets/main.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-body text-body wfull overflow-hidden overflow-y-auto">
+<body>
 
-  <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 backdrop-blur-2xl inset-0 z30 hidden lg-hidden">
-  </div>
-  <div id="home" mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5">
-    <div class="w-full flex justify-between h14 items-center">
-      <div class="hfull flex items-center gap-x-4 text-body">
-        <a href="tel:" class="flex gap-1 items-center text-sm">
-          <span class="i-ph-phone-call-duotone text-xl"></span>
-          <span class="hidden sm-flex">+243 977 960 987  </span>
-        </a>
-        <a href="mailto:" flex gap-1 items-center text-sm>
-          <span class="i-ph-at-duotone text-xl"></span>
-          <span class="hidden sm-flex">info@mannedesbraves.com</span>
-        </a>
-      </div>
-      <div class="flex items-center gap-x-2.5 -mx-2 text-sub-body">
-        <a href="#facebook" aria-label="facebook link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-          <span aria-hidden="true" class="i-fx-facebook flex text-2xl transition ease-linear"></span>
-        </a>
-        <a href="#instagram" aria-label="Instagram link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-          <span aria-hidden="true" class="i-fx-instagram flex text-2xl transition ease-linear"></span>
-        </a>
-        <a href="#linkedin" aria-label="Linkedin link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-          <span aria-hidden="true" class="i-fx-linkedin flex text-2xl transition ease-linear"></span>
-        </a>
-      </div>
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white">La Manne<span class="text-dark">.</span>des Braves</h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="faq.html" class="dropdown-item">FAQs</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
     </div>
-  </div>
-  <header class="bdr_b backdrop-filter backdrop-blur-xl sticky top-0 z40">
-    <nav px="5 sm:10 md:12 lg:5"
-      class="z-40 left-0 top-0 w-full flex items-center h20  mx-auto max-w-7xl gap-x-5 justify-between">
-      <div flex items-center min-w-max>
-        <a href="#home" text-xl flex items-center gap-x-2>
-          <div class="rd-xl b-3 b-gray9 p1 flex items-center h12">
-            <img src="logo.png" alt="la manne des braves" width="224" height="205" class="hfull wauto rd-lg">
-          </div>
-          <div class="flex flex-col text-sub-body">
-            <span font-bold text-title>La manne</span>
-            <span text-sm>Des braves</span>
-          </div>
-        </a>
-      </div>
-
-      <div data-navbar bg-body lg-bg-transparent bdr_high lg-b-none py="8 lg:0" px="5 sm:10 md:12 lg:0"
-        lg="flex justify-between" fixed top-20 left-0 w-full lg-top-0 lg-relative duration-300 ease-linear
-        class="translate-y-10 op-0 invisible lg:visible lg:translate-y-0 lg:op-100">
-        <ul class="text-body flex flex-col lg-flex-row gap-6 lg-items-center lg-w-full lg-justify-center">
-          <li>
-            <a href="#home" class="py2.5 duration-300 ease-linear hover-text-title">Accueil</a>
-          </li>
-          <li>
-            <a href="#valeurs" class="py2.5 duration-300 ease-linear hover-text-title">Valeurs</a>
-          </li>
-          <li>
-            <a href="#services" class="py2.5 duration-300 ease-linear hover-text-title">Services</a>
-          </li>
-          <li>
-            <a href="#apropos" class="py2.5 duration-300 ease-linear hover-text-title">A propos</a>
-          </li>
-          <li>
-            <a href="http://mannedesbraves.com:2096/" class="py2.5 duration-300 ease-linear hover-text-title">webmail</a>
-          </li>
-        </ul>
-        <div flex sm-items-center lg-min-w-max mt10 lg-mt0>
-          <a href="#contact" class="btn btn-md rd-3xl justify-center btn-soft-gray bdr">
-            Prendre contact
-          </a>
-        </div>
-      </div>
-      <div aria-hidden="true" class="flex items-center lg:hidden">
-        <button data-toggle-navbar data-is-open="false" bdr_l class="outline-none bg-transparent pl3 relative py3">
-          <span class="sr-only">Toggle navbar</span>
-          <div id="line-1" aria-hidden="true" h0.5 w6 rd bg-gray-7 transition duration-300>
-          </div>
-          <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd bg-gray-7 transition duration-300></div>
-        </button>
-      </div>
-    </nav>
-  </header>
+    <!-- Navbar End -->
 
 
-  <section class="pt4">
-    <div
-      class="mx-auto max-w-7xl px5 sm-px8 flex flex-col lg-flex-row lg-items-center gap-10 bg-solid rd-3xl pt26 md-pt0">
-      <div class="flex-1 flex flex-col gap-y8 lg-py10 max-w-3xl lg-max-w-none mx-auto text-center lg-text-left">
-        <h1 class="text-title font-bold text-3xl sm-text-4xl/snug xl-text-5xl/snug">
-          Votre Partenaire de Confiance en Douane et Ressources Humaines
-        </h1>
-        <p class="max-w-2xl lg-max-w-none mx-auto">
-          Des solutions complètes et innovantes pour vos besoins en import-export, logistique, et gestion de personnel
-        </p>
-        <div class="flex justify-center lg-justify-start">
-          <a href="" aria-label="" class="btn btn-xl rd-3xl btn-solid-neutral">
-            Obtenez un devis gratuit
-          </a>
-        </div>
-      </div>
-      <div class="max-w-md lg-max-w-none mx-auto lg-w-1/2 p10">
-        <img src="image-hero.svg" alt="" width="" height="" class="w-full">
-      </div>
-    </div>
-  </section>
-
-  <section id="valeurs" class="py20 scroll-mt20">
-    <div class="mx-auto max-w-7xl px5 sm-px8 flex flex-col gap-20">
-      <div class="flex flex-col md-flex-row md-justify-between">
-        <div class="max-w-lg">
-          <span class="text-lg text-sub-body tracking-wider">Nos valeurs</span>
-          <h2 class="text-3xl md-text-4xl font-bold mt-2 text-title">
-            Votre Satisfaction, c'est notre affaire.
-          </h2>
-        </div>
-        <p class="text-xl mt6 text-sub-title max-w-md">
-          Nous sommes guidés par un ensemble de valeurs fondamentales qui définissent
-          notre approche du travail et de nos relations avec nos clients.
-        </p>
-      </div>
-      <div class="grid sm-grid-cols-2 lg-grid-cols-4 gap-4 w-full">
-        <div class="card-solid bdr_light rd-2xl p5 space-y-5 relative">
-          <div class="wmax p2 rd-xl bg-white bdr">
-            <span aria-hidden="true" class="flex i-ph-certificate-duotone text-2xl"></span>
-          </div>
-          <span
-            class="absolute top-1 right-2 op20 text-transparent bg-gradient-to-b bg-clip-text from-gray8 to-white font-bold text-6xl">
-            01
-          </span>
-          <h2 class="font-semibold text-title text-xl">
-            Intégrité
-          </h2>
-          <p>
-            Nous sommes engagés à agir avec honnêteté, transparence et responsabilité dans toutes nos interactions.
-          </p>
-        </div>
-        <div class="card-solid bdr_light rd-2xl p5 space-y-5 relative">
-          <div class="wmax p2 rd-xl bg-white bdr">
-            <span aria-hidden="true" class="flex i-ph-users-duotone text-2xl"></span>
-          </div>
-          <span
-            class="absolute top-1 right-2 op20 text-transparent bg-gradient-to-b bg-clip-text from-gray8 to-white font-bold text-6xl">
-            02
-          </span>
-          <h2 class="font-semibold text-title text-xl">
-            Client avant tout
-          </h2>
-          <p>
-            Nous sommes à l'écoute de leurs besoins et nous adaptons nos services en conséquence.
-          </p>
-        </div>
-        <div class="card-solid bdr_light rd-2xl p5 space-y-5 relative">
-          <div class="wmax p2 rd-xl bg-white bdr">
-            <span aria-hidden="true" class="flex i-ph-chart-line-up-duotone text-2xl"></span>
-          </div>
-          <span
-            class="absolute top-1 right-2 op20 text-transparent bg-gradient-to-b bg-clip-text from-gray8 to-white font-bold text-6xl">
-            03
-          </span>
-          <h2 class="font-semibold text-title text-xl">
-            Excellence
-          </h2>
-          <p>
-            Nous nous efforçons d'atteindre l'excellence dans tout ce que nous entreprenons.
-          </p>
-        </div>
-        <div class="card-solid bdr_light rd-2xl p5 space-y-5 relative">
-          <div class="wmax p2 rd-xl bg-white bdr">
-            <span aria-hidden="true" class="flex i-ph-finn-the-human-duotone text-2xl"></span>
-          </div>
-          <span
-            class="absolute top-1 right-2 op20 text-transparent bg-gradient-to-b bg-clip-text from-gray8 to-white font-bold text-6xl">
-            04
-          </span>
-          <h2 class="font-semibold text-title text-xl">
-            Respect
-          </h2>
-          <p>
-            Nous traitons nos clients, nos partenaires et nos collaborateurs avec respect et dignité.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="services" class="py20 scroll-mt20">
-    <div class="mx-auto max-w-7xl px5 sm-px8 space-y-16">
-      <div class="flex flex-col md-flex-row md-justify-between">
-        <div class="max-w-lg">
-          <span class="text-lg text-sub-body tracking-wider">Nos services</span>
-          <h2 class="text-3xl md-text-4xl font-bold mt-2 text-title">
-            Des Solutions sur Mesure pour vos Besoins en RDC.
-          </h2>
-        </div>
-        <p class="text-xl mt6 text-sub-title max-w-md">
-          Nous sommes dédiés à fournir des services de haute qualité pour répondre à vos
-          besoins en douane, sous-traitance et construction.
-        </p>
-      </div>
-      <div class="grid md-grid-cols-2 gap-6">
-        <div class="card-solid bg-op80 bdr_light rd-2xl gap8 flex flex-col">
-          <div class="space-y-6 flex-1 p6 sm-p8">
-            <div class="wmax p3 rd-xl bg-white bdr_light">
-              <span aria-hidden="true" class="flex i-ph-air-traffic-control-duotone text-2xl"></span>
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">MDB</div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Transitaire Officiel EN RD CONGO</h1>
+                    <p class="text-white mb-4 animated slideInRight">Transitaire Officiel EN RD CONGO</p>
+                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Lire
+                        plus</a>
+                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact
+                        Us</a>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/1.png" alt="">
+                </div>
             </div>
-            <h2 class="font-bold text-title text-2xl">
-              Services Douaniers et Accises
-            </h2>
-            <p>
-              Nous facilitons toutes les formalités douanières pour assurer un processus rapide et conforme aux
-              réglementations en vigueur.
-            </p>
-            <ul data-ui-list class="space-y-2 font-medium">
-              <li>
-                Dédouanement Import et Export Rapide
-              </li>
-              <li>
-                Enlèvement d'Urgence et Régularisations
-              </li>
-              <li>
-                Ouverture et Suivi des Licences
-              </li>
-              <li>
-                Prise en Charge des Envois Aériens
-              </li>
-            </ul>
-          </div>
-          <div class="overflow-hidden flex justify-end pl6 sm-pl8">
-            <img src="douane.png" alt="" class="hfull wauto">
-          </div>
         </div>
-        <div class="card-solid bg-op80 bdr_light rd-2xl gap8 flex flex-col">
-          <div class="space-y-6 flex-1 p6 sm-p8">
-            <div class="wmax p3 rd-xl bg-white bdr_light">
-              <span aria-hidden="true" class="flex i-ph-factory-duotone text-2xl"></span>
-            </div>
-            <h2 class="font-bold text-title text-2xl">
-              Construction et Génie Civil
-            </h2>
-            <p>
-              Nous réalisons des travaux publics et des projets de construction, avec une expertise particulière dans
-              les constructions industrielles.
-            </p>
-            <ul data-ui-list class="space-y-2 font-medium">
-              <li>
-                Travaux Publics et Bâtiment
-              </li>
-              <li>
-                Nous offrons des services complets de génie civil pour tous types de projets de construction.
-              </li>
-            </ul>
-          </div>
-          <div class="overflow-hidden flex justify-end pl6 sm-pl8">
-            <img src="construction.png" alt="" class="wfull hauto">
-          </div>
-        </div>
-        <div class="card-solid bg-op80 bdr_light rd-2xl gap8 flex flex-col md-col-span-2 md-flex-row">
-          <div class="space-y-6 flex-1 p6 sm-p8">
-            <div class="wmax p3 rd-xl bg-white bdr_light">
-              <span aria-hidden="true" class="flex i-ph-users-duotone text-2xl"></span>
-            </div>
-            <h2 class="font-bold text-title text-2xl">
-              Ressources Humaines
-            </h2>
-            <p>
-              Notre équipe d'experts en ressources humaines vous accompagne dans la gestion de votre capital humain, en
-              vous proposant des solutions sur mesure pour:
-            </p>
-            <ul data-ui-list class="space-y-2 font-medium">
-              <li>
-                Recrutement et sélection de personnel
-              </li>
-              <li>
-                Formation et développement des compétences
-              </li>
-              <li>
-                Gestion de la paie et des avantages sociaux
-              </li>
-              <li>
-                Externalisation de la main-d'œuvre
-              </li>
-              <li>
-                Suivi administratif et gestion des fins de contrat
-              </li>
-            </ul>
-          </div>
-          <div class="overflow-hidden flex justify-end md-items-end md-w40% md-pt8 md-pl8">
-            <img src="Admin-bro.svg" alt="" class="hfull wauto">
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <section id="apropos" class="py20">
-    <div class="mx-auto max-w-7xl px5 sm-px8 flex flex-col md-flex-row gap-16 md-items-center">
-      <div
-        class="flex-1 flex md-items-center relative before-absolute before-bg-gray950 before-content-empty before-wfull before-hfull before-top-2 before-left-2 before-rd-3xl">
-        <div class=" relative">
-          <img src="about_illustration.webp" alt="Illustration a propos de la manne des braves" width="1200"
-            height="1200" class="w-full hauto rd-3xl relative">
-        </div>
-      </div>
-      <div class="md-w-1/2 xl-w-52% flex flex-col space-y-12">
-        <div class="max-w-lg md-max-w-none">
-          <span class="text-lg text-sub-body tracking-wider">A propos de nous</span>
-          <h2 class="text-3xl md-text-4xl font-bold mt-2 text-title">
-            La Manne des Braves SARL: Votre Partenaire de Confiance en RDC
-          </h2>
-        </div>
-        <p class="text-xl text-sub-title">
-          La Manne des Braves SARL (MDB SARL) est un acteur majeur et expérimenté dans le domaine des douanes, des
-          ressources humaines et de la construction en République Démocratique du Congo. Fondée en 2011 par Monsieur
-          Ghislain BAWOLO BOKANA, expert chevronné en douane et en gestion des ressources humaines, MDB SARL s'est
-          forgée une solide réputation en accompagnant les importateurs, exportateurs et entreprises dans la réussite
-          de leurs activités.
-        </p>
-        <div class="grid gap6 sm-grid-cols-2">
-          <a href="tel:+243" class="gap-x-6 items-start btn btn-outline-gray rd-3xl p-4">
-            <span class="p3 md-p3.5 rd-xl bg-gray8 text-white flex w-max">
-              <span aria-hidden="true" class="flex i-ph-phone-call-duotone text-2xl"></span>
-            </span>
-            <div class="space-y-0.5 flex flex-col flex-1">
-              <p>Passer un</p>
-              <p class="font-semibold text-title text-lg">+243 977 960 987  </p>
-            </div>
-          </a>
-          <a href="mailto:" class="gap-x-6 items-start btn btn-outline-gray rd-3xl p-4">
-            <span class="p3 md-p3.5 rd-xl bg-gray8 text-white flex w-max">
-              <span aria-hidden="true" class="flex i-ph-at-duotone text-2xl"></span>
-            </span>
-            <div class="space-y-0.5 flex flex-col flex-1">
-              <p>Envoyer un mail</p>
-              <p class="font-semibold text-title text-lg">+243 971 33 75 902</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="valeurs" class="py20 scroll-mt20">
-    <div class="mx-auto max-w-7xl px5 sm-px8 flex flex-col gap-20">
-      <div class="flex flex-col md-flex-row md-justify-between">
-        <div class="max-w-lg flex-1">
-          <span class="text-lg text-sub-body tracking-wider">Partenaires et clients</span>
-          <h2 class="text-3xl md-text-4xl font-bold mt-2 text-title">
-            Ils nous font confiance.
-          </h2>
-        </div>
-        <div class="flex flex-wrap gap-y4 gap-x6 flex-1 select-none pointer-events-none">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-          <img src="/logo/Makutano-inblock.png" alt="logo partenaire" width="" class="h13 wauto">
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Hero End -->
 
 
-  <section class="py20">
-    <div class="mx-auto max-w-3xl px5 sm-px8 flex flex-col gap-20">
-      <div class="max-w-lg flex-1">
-        <span class="text-lg text-sub-body tracking-wider">Faq</span>
-        <h2 class="text-3xl md-text-4xl font-bold mt-2 text-title">
-          Les Questions les plus posées
-        </h2>
-      </div>
-      <div data-accordion data-default-value="item-1" data-type="single" class="space-y-4 select-none">
-        <div data-accordion-item data-accordion-value="item-1" class="bg-solid bdr_light rd-3xl p5 sm-p6">
-          <button data-accordion-trigger
-            class="flex items-center justify-between gap-4 w-full [&[aria-expanded=true]>span]-rotate-189">
-            <div class="min-w-max">
-              <span
-                class="size-10 text-white  bg-gradient-to-tr from-gray950 via-gray9 to-gray8 d-flex-place-center rd-xl">
-                01
-              </span>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
             </div>
-            <h1 class="flex-1 text-sub-title text-xl font-semibold text-left">Lorem ipsum dolor sit amet ? </h1>
-            <span class="min-w-max flex i-ph-caret-down ease-linear duration-200"></span>
-          </button>
-          <div data-accordion-content class="pl-14 overflow-hidden h-0 transition-all">
-            <p class="text-sub-body pt2">
-              Lorem ipsum dolor sit amet Temporibus, adipisci quam. Voluptates magnam voluptas aut corporis dolor
-              quibusdam voluptatibus, culpa, nobis numquam tenetur illum eligendi veniam distinctio, ab inventore
-              molestias?
-            </p>
-          </div>
         </div>
-        <div data-accordion-item data-accordion-value="item-2" class="bg-solid bdr_light rd-3xl p5 sm-p6">
-          <button data-accordion-trigger
-            class="flex items-center justify-between gap-4 w-full [&[aria-expanded=true]>span]-rotate-189">
-            <div class="min-w-max">
-              <span
-                class="size-10 text-white bg-gradient-to-tr from-gray950 via-gray9 to-gray8 d-flex-place-center rd-xl">
-                02
-              </span>
-            </div>
-            <h1 class="flex-1 text-sub-title text-xl font-semibold text-left">Lorem ipsum dolor sit amet ? </h1>
-            <span class="min-w-max flex i-ph-caret-down ease-linear duration-200"></span>
-          </button>
-          <div data-accordion-content class="pl-14 overflow-hidden h-0 transition-all">
-            <p class="text-sub-body pt2">
-              Lorem ipsum dolor sit amet Temporibus, adipisci quam. Voluptates magnam voluptas aut corporis dolor
-              quibusdam voluptatibus, culpa, nobis numquam tenetur illum eligendi veniam distinctio, ab inventore
-              molestias?
-            </p>
-          </div>
-        </div>
-        <div data-accordion-item data-accordion-value="item-3" class="bg-solid bdr_light rd-3xl p5 sm-p6">
-          <button data-accordion-trigger
-            class="flex items-center justify-between gap-4 w-full [&[aria-expanded=true]>span]-rotate-189">
-            <div class="min-w-max">
-              <span
-                class="size-10 text-white  bg-gradient-to-tr from-gray950 via-gray9 to-gray8 d-flex-place-center rd-xl">
-                03
-              </span>
-            </div>
-            <h1 class="flex-1 text-sub-title text-xl font-semibold text-left">Lorem ipsum dolor sit amet ? </h1>
-            <span class="min-w-max flex i-ph-caret-down ease-linear duration-200"></span>
-          </button>
-          <div data-accordion-content class="pl-14 overflow-hidden h-0 transition-all">
-            <p class="text-sub-body pt2">
-              Lorem ipsum dolor sit amet Temporibus, adipisci quam. Voluptates magnam voluptas aut corporis dolor
-              quibusdam voluptatibus, culpa, nobis numquam tenetur illum eligendi veniam distinctio, ab inventore
-              molestias?
-            </p>
-          </div>
-        </div>
-        <div data-accordion-item data-accordion-value="item-4" class="bg-solid bdr_light rd-3xl p5 sm-p6">
-          <button data-accordion-trigger
-            class="flex items-center justify-between gap-4 w-full [&[aria-expanded=true]>span]-rotate-189">
-            <div class="min-w-max">
-              <span
-                class="size-10 text-white  bg-gradient-to-tr from-gray950 via-gray9 to-gray8 d-flex-place-center rd-xl">
-                04
-              </span>
-            </div>
-            <h1 class="flex-1 text-sub-title text-xl font-semibold text-left">Lorem ipsum dolor sit amet ? </h1>
-            <span class="min-w-max flex i-ph-caret-down ease-linear duration-200"></span>
-          </button>
-          <div data-accordion-content class="pl-14 overflow-hidden h-0 transition-all">
-            <p class="text-sub-body pt2">
-              Lorem ipsum dolor sit amet Temporibus, adipisci quam. Voluptates magnam voluptas aut corporis dolor
-              quibusdam voluptatibus, culpa, nobis numquam tenetur illum eligendi veniam distinctio, ab inventore
-              molestias?
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <footer class="relative mt-20 bg-gray50 bdr_t px-4 pt-28">
-    <div class="absolute -top-8 left-1/2 -translate-x-1/2 rd-xl b-4 b-gray9 p1">
-      <img src="/logo.png" alt="la manne des braves" width="224" height="205" class="h-14 w-auto rd-lg">
-    </div>
-    <nav class="max-w-7xl px5 sm-px8 mx-auto mb-8">
-      <ul aria-label="Footer Navigation" class="mx-auto flex justify-center flex-wrap gap-y4 gap-x6 text-center">
-        <li>
-          <a href="#home" class="transition hover-title">Accueil</a>
-        </li>
-        <li>
-          <a href="#services" class="transition hover-title">Services</a>
-        </li>
-        <li>
-          <a href="#valeurs" class="transition hover-title">Valeurs</a>
-        </li>
-        <li>
-          <a href="#apropos" class="transition hover-title">A propos</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="mx-auto flex flex-wrap items-center gap-1 pb10 justify-center max-w-lg">
-      <a href="mailto:" aria-label="mail to link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-        <span aria-hidden="true" class="i-ph-at flex text-2xl transition ease-linear"></span>
-      </a>
-      <a href="tel:+243" aria-label="phone-call" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-        <span aria-hidden="true" class="i-ph-phon-call flex text-2xl transition ease-linear"></span>
-      </a>
-      <a href="#facebook" aria-label="facebook link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-        <span aria-hidden="true" class="i-fx-facebook flex text-2xl transition ease-linear"></span>
-      </a>
-      <a href="#instagram" aria-label="Instagram link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-        <span aria-hidden="true" class="i-fx-instagram flex text-2xl transition ease-linear"></span>
-      </a>
-      <a href="#linkedin" aria-label="Linkedin link" class="bdr_light bg-solid hover-bg-gray2 hover-bdr p1.5 rd-xl">
-        <span aria-hidden="true" class="i-fx-linkedin flex text-2xl transition ease-linear"></span>
-      </a>
-    </div>
-    <div class="max-w-7xl px5 sm-px8 py3.5 mx-auto">
-      <div
-        class="p2.5 rd-2xl text-sub-body flex flex-col md-text-start text-center gap-3 md-flex-row md-justify-between">
-        <div>
-          © <span data-current-year></span> La Manne des braves | Tout droit Reservé.
-        </div>
-        <div>
-          Designed by<a href="" target="_blank" class="text-sub-title font-semibold">UnifyDev</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- Full Screen Search End -->
 
 
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/1.webp">
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3"></div>
+                    <h1 class="mb-4">A propos de nous</h1>
+                    <p class="mb-4 " style="text-align: justify;">La Manne des Braves SARL en sigle « MDB SARL » est un
+                        transitaire en douane agrée sous le numéro 000188 par la DGDA ainsi que l’arrêté ministériel n°
+                        011/CAB/MIN/FIN/98 du 30 Mars 1998 accordant un caractère d’œuvrer sur tout le territoire
+                        national.
+
+                        Pour sa reconnaissance nationale et en conformité avec la loi légale et fiscale, la Manne des
+                        Braves est immatriculée au RCCM sous le numéro RCCM/CD/LSHI/RCCM/15-B-3463, Identification
+                        Nationale 05-H4901-N57665K,
+                        Numéro Impôt A1008059X. Le siège social est situé au 960 de l’avenue Laurent Désiré Kabila, au
+                        deuxième étage du bâtiment Méthodiste communément appelé »LIPAMU », commune et ville de
+                        Lubumbashi dans la province du Haut Katanga, en République Démocratique du Congo. Avec une
+                        représentation à Kinshasa, Matadi, Kasumbalesa et Kolwezi
+                    </p>
+
+
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="">Lire plus</a>
+                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
+                    <h1 class="mb-4">NOS ACTIVITES</h1>
+                    <p class="mb-4">Notre agence en douane vous accorde les facilités selon le besoin et les
+                        circonstances et
+                        vous fournit toutes les informations concernant les formalités en douane en vous proposant les
+                        services suivants :</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Lire plus</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-robot fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">
+                                            <h5>Dans le domaine de la DGDA</h5>
+                                            <p>Notre agence en douane vous accorde les facilités selon le besoin et les
+                                                circonstances et vous fournit toutes les informations concernant les
+                                                formalités en douane en vous proposant les services suivants :
+                                                Dédouanement IMPORT et EXPORT rapide dans le respect du délai,
+                                                Enlèvement d’urgence en cas de besoin et Régularisations
+                                                Ouverture des licences pour compte de ses clients et en assure le suivi
+                                                Prise en charge des envois aériens de ses clients
+                                            </p>
+                                            <a class="btn px-3 mt-auto mx-auto" href="">Lire plus</a>
+                                    </div>
+
+                                    <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                        <div
+                                            class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                            <div class="service-icon btn-square">
+                                                <i class="fa fa-brain fa-2x"></i>
+                                            </div>
+                                            <h5 class="mb-3">Dans le domaine de construction et génie civile</h5>
+                                            <p>Principalement les travaux publics et le bâtiment (constructions industrielles, usines, entrepôts….)
+                                                
+                                                </p>
+                                            <a class="btn px-3 mt-auto mx-auto" href="">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                               
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-brain fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Dans la sous traitance</h5>
+                                        <p>-La manne des Braves SARL, procède à l’identification des postes à pourvoir ainsi que le profil des futurs occupants,
+                                            -Le recrutement du personnel,
+                                            -La formation du personnel,
+                                            -La logistique (Fournitures des biens et divers services)
+                                            -Le suivi administratif auprès des services appropriés
+                                            -La gestion des fins contrats de travail.
+                                            </p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Lire plus</a>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Nos Valeurs</div>
+                    <h1 class="mb-4">Nos valeurs</h1>
+                    <p class="mb-4">Nous écartons la corruption comme mode d’acquisition d’un marché et exigeons les diplômes, l’expérience professionnelle, la compétence, la bonne moralité, l’intégrité comme atouts pour faire partie de l’équipe de la Manne des Braves SARL.
+                        Le strict respect de nos clients, la rigueur, la convivialité sont nos atouts pour un partenariat gagnant.
+                        Ceci couronne notre devise : « Votre Satisfaction est notre affaire »
+                        
+                        </p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Nos objectifs</div>
+                    <h1 class="text-white mb-4">Nos objectifs</h1>
+                    <p class="text-light mb-4">Le parcours professionnel, l’expérience ainsi que son entourage commercial ont conduit Monsieur Ghislain BAWOLO BOKANA à exercer comme un rapproché de la Douane  tout en étant Directeur Administratif et des Ressources humaines chevronné dont aléas du parcours l’ont poussé à créer en 2011, cette équipe d’experts conseil en Douane et en ressources humaines pour parier aux lacunes vécus et d’apporter des innovations dans ce secteur dans le but de satisfaire les importateurs , les exportateurs ainsi que les entreprises à asseoir une gestion des ressources humaines efficiente ,
+                         moderne, non conflictuelle dénommée « La Manne des Braves SARL».</p>
+                         <p class="text-light mb-4"> 
+                            Son objet devient ainsi de procéder à toutes les opérations de douane et accises autorisées par la législation congolaise en vigueur(Agence en Douane) import, export, transport, commerce général, entreposage….généralement toutes les opérations de quelque nature qu’elles soient juridiques, économiques et financières, civiles et commerciales se rattachant à l’objet sus-indiqué ou à tout autre objets similaires ou connexes de nature à favoriser directement ou indirectement le but poursuivi par la société , son extension ou son développement , la sous traitance de la main d’œuvre locale et expatriée ainsi  que tous travaux généraux de construction,
+                             de génie civile, publics ou privés, sans exception ni distinction.
+                               </p>
+                   
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How to build a website?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How long will it take to get a new website?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you only create HTML websites?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Will my website be mobile-friendly?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Will you maintain my site for me?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    I’m on a strict budget. Do you have any low cost options?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Will you maintain my site for me?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    I’m on a strict budget. Do you have any low cost options?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
+                                    diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
+                    <h1 class="mb-4">Meet Our Experienced Team Members</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
+                                        <h5 class="mb-0">Boris Johnson</h5>
+                                        <small>Founder & CEO</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
+                                        <h5 class="mb-0">Adam Crew</h5>
+                                        <small>Executive Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
+                                        <h5 class="mb-0">Kate Winslet</h5>
+                                        <small>Co Founder</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
+                                        <h5 class="mb-0">Cody Gardner</h5>
+                                        <small>Project Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4">What Say Our Clients!</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                                stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
+                                amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                                stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
+                                amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                                stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
+                                amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1>
+                    </a>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Career</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Robotic Automation</a>
+                    <a class="btn btn-link" href="">Machine learning</a>
+                    <a class="btn btn-link" href="">Predictive Analysis</a>
+                    <a class="btn btn-link" href="">Data Science</a>
+                    <a class="btn btn-link" href="">Robot Technology</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By
+                        <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
