@@ -22,62 +22,109 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="assets/main.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
-
+<body class="bg-white font-sans pt-24">
 
     <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">La Manne<span class="text-dark">.</span>des Braves</h1>
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="logo.png" alt="La Manne des Braves Logo" class="h-10">
                 </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="" class="nav-item nav-link">About</a>
-                        <a href="" class="nav-item nav-link">Services</a>
-                        <a href="" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#hero" class="text-white font-medium transition-colors hover:text-secondary">Home</a>
+                    <a href="#about" class="text-white font-medium transition-colors hover:text-secondary">About</a>
+                    <a href="#services" class="text-white font-medium transition-colors hover:text-secondary">Services</a>
+                    <a href="#team" class="text-white font-medium transition-colors hover:text-secondary">Team</a>
+                    <a href="#testimonial" class="text-white font-medium transition-colors hover:text-secondary">Testimonial</a>
+                    <a href="#faqs" class="text-white font-medium transition-colors hover:text-secondary">FAQs</a>
+                    <a href="contact.html" class="text-white font-medium transition-colors hover:text-secondary">Contact</a>
+                    <button type="button" class="text-white" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" type="button" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
             </nav>
         </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-primary/90 backdrop-blur-sm">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="#hero" class="block text-white font-medium">Home</a>
+                <a href="#about" class="block text-white font-medium">About</a>
+                <a href="#services" class="block text-white font-medium">Services</a>
+                <a href="#team" class="block text-white font-medium">Team</a>
+                <a href="#testimonial" class="block text-white font-medium">Testimonial</a>
+                <a href="#faqs" class="block text-white font-medium">FAQs</a>
+                <a href="contact.html" class="block text-white font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slidebar Start -->
+    <div id="slidebar" class="fixed top-0 right-0 w-64 h-full bg-primary/90 backdrop-blur-sm z-50 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+        <div class="flex justify-end p-4">
+            <button id="slidebar-close-button" class="text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="px-4 py-4 space-y-4">
+            <a href="#hero" class="block text-white font-medium">Home</a>
+            <a href="#about" class="block text-white font-medium">About</a>
+            <a href="#services" class="block text-white font-medium">Services</a>
+            <a href="#team" class="block text-white font-medium">Team</a>
+            <a href="#testimonial" class="block text-white font-medium">Testimonial</a>
+            <a href="#faqs" class="block text-white font-medium">FAQs</a>
+            <a href="contact.html" class="block text-white font-medium">Contact</a>
+        </div>
     </div>
+    <!-- Slidebar End -->
     <!-- Navbar End -->
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
-        <div class="container pt-5">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">MDB</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Transitaire Officiel EN RD CONGO</h1>
-                    <p class="text-white mb-4 animated slideInRight">Transitaire Officiel EN RD CONGO</p>
-                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Lire
-                        plus</a>
-                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact
-                        Us</a>
+    <div id="hero" class="container-fluid pt-5 bg-primary bg-cover bg-center mb-5" style="background-image: url(img/bg-hero.png);">
+        <div class="owl-carousel hero-carousel">
+            <div class="container mx-auto pt-5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-5">
+                    <div class="lg:align-self-center text-center lg:text-left mb-lg-5">
+                        <div class="inline-block border border-white rounded-full text-white px-3 mb-3 text-sm animate-on-scroll" style="--delay: 100ms">MDB</div>
+                        <h1 class="text-4xl lg:text-5xl text-white mb-4 font-bold animate-on-scroll" style="--delay: 200ms">Transitaire Officiel EN RD CONGO</h1>
+                        <p class="text-white mb-4 animate-on-scroll" style="--delay: 300ms">Transitaire Officiel EN RD CONGO</p>
+                        <a href="" class="inline-block bg-white text-primary py-3 px-6 rounded-full mr-3 animate-on-scroll" style="--delay: 400ms">Lire
+                            plus</a>
+                        <a href="" class="inline-block border border-white text-white py-3 px-6 rounded-full animate-on-scroll" style="--delay: 500ms">Contact
+                            Us</a>
+                    </div>
+                    <div class="lg:align-self-end text-center lg:text-right animate-on-scroll" style="--delay: 600ms">
+                        <img class="max-w-full h-auto" src="img/1.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/1.png" alt="">
+            </div>
+            <div class="container mx-auto pt-5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-5">
+                    <div class="lg:align-self-center text-center lg:text-left mb-lg-5">
+                        <div class="inline-block border border-white rounded-full text-white px-3 mb-3 text-sm animate-on-scroll" style="--delay: 100ms">Simplifiez Vos Opérations Douanières</div>
+                        <h1 class="text-4xl lg:text-5xl text-white mb-4 font-bold animate-on-scroll" style="--delay: 200ms">Votre partenaire de confiance pour des formalités douanières rapides et efficaces en RDC.</h1>
+                        <p class="text-white mb-4 animate-on-scroll" style="--delay: 300ms">Des solutions de transport et de douane fiables pour vos besoins.</p>
+                        <a href="" class="inline-block bg-white text-primary py-3 px-6 rounded-full mr-3 animate-on-scroll" style="--delay: 400ms">Nos Services</a>
+                        <a href="" class="inline-block border border-white text-white py-3 px-6 rounded-full animate-on-scroll" style="--delay: 500ms">Demander un Devis</a>
+                    </div>
+                    <div class="lg:align-self-end text-center lg:text-right animate-on-scroll" style="--delay: 600ms">
+                        <img class="max-w-full h-auto" src="img/hero-img.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,7 +132,672 @@
     <!-- Hero End -->
 
 
-    <!-- Full Screen Search Start -->
+    <!-- Photo and Text Slider Start -->
+    <div class="container-fluid py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 500px;">
+                <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Découvrez Notre Expertise en Images</div>
+                <h1 class="text-4xl font-bold mb-4">Parcourez nos réalisations et apercevez la fluidité de nos opérations douanières et logistiques.</h1>
+            </div>
+            <div class="owl-carousel photo-text-carousel">
+                <div class="item">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img class="w-full h-64 object-cover" src="img/project-1.jpg" alt="Project 1">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Project Title One</h3>
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img class="w-full h-64 object-cover" src="img/project-2.jpg" alt="Project 2">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Project Title Two</h3>
+                            <p class="text-sm">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img class="w-full h-64 object-cover" src="img/project-3.jpg" alt="Project 3">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Project Title Three</h3>
+                            <p class="text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Photo and Text Slider End -->
+
+
+    <!-- About Start -->
+    <div id="about" class="container-fluid py-5 animate-on-scroll">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+                <div>
+                    <div class="relative overflow-hidden">
+                        <img class="w-full h-auto" src="img/1.webp">
+                        <div class="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat" style="background-image: url(img/bg-about-img.png);"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">À Propos de La Manne des Braves</div>
+                    <h1 class="text-4xl font-bold mb-4">Découvrez notre histoire, notre agrément officiel et notre engagement à faciliter vos échanges commerciaux en République Démocratique du Congo.</h1>
+                    <p class="mb-4 text-justify">La Manne des Braves SARL en sigle « MDB SARL » est un
+                        transitaire en douane agrée sous le numéro 000188 par la DGDA ainsi que l’arrêté ministériel n°
+                        011/CAB/MIN/FIN/98 du 30 Mars 1998 accordant un caractère d’œuvrer sur tout le territoire
+                        national.
+
+                        Pour sa reconnaissance nationale et en conformité avec la loi légale et fiscale, la Manne des
+                        Braves est immatriculée au RCCM sous le numéro RCCM/CD/LSHI/RCCM/15-B-3463, Identification
+                        Nationale 05-H4901-N57665K,
+                        Numéro Impôt A1008059X. Le siège social est situé au 960 de l’avenue Laurent Désiré Kabila, au
+                        deuxième étage du bâtiment Méthodiste communément appelé »LIPAMU », commune et ville de
+                        Lubumbashi dans la province du Haut Katanga, en République Démocratique du Congo. Avec une
+                        représentation à Kinshasa, Matadi, Kasumbalesa et Kolwezi
+                    </p>
+                    <div class="flex items-center mt-4">
+                        <a class="inline-block bg-primary text-white rounded-full px-4 py-2 mr-3" href="">Lire plus</a>
+                        <a class="inline-block border border-primary text-primary w-10 h-10 flex items-center justify-center rounded-full mr-3" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="inline-block border border-primary text-primary w-10 h-10 flex items-center justify-center rounded-full mr-3" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="inline-block border border-primary text-primary w-10 h-10 flex items-center justify-center rounded-full mr-3" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="inline-block border border-primary text-primary w-10 h-10 flex items-center justify-center rounded-full" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div id="services" class="container-fluid bg-light mt-5 py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <div class="lg:col-span-5">
+                    <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Nos Services Douaniers et Logistiques</div>
+                    <h1 class="text-4xl font-bold mb-4">De l'import-export à la sous-traitance et la construction, explorez l'étendue de nos solutions sur mesure pour vos besoins.</h1>
+                    <p class="mb-4">Notre agence en douane vous accorde les facilités selon le besoin et les
+                        circonstances et
+                        vous fournit toutes les informations concernant les formalités en douane en vous proposant les
+                        services suivants :</p>
+                    <a class="inline-block bg-primary text-white rounded-full px-4 py-2" href="">Lire plus</a>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div>
+                                <div class="p-8 bg-white rounded-lg text-center flex flex-col justify-center items-center transition duration-500 hover:bg-primary group">
+                                    <div class="w-24 h-24 bg-light flex items-center justify-center rounded-full text-primary transition duration-500 group-hover:bg-white">
+                                        <i class="fa fa-robot fa-2x"></i>
+                                    </div>
+                                    <h5 class="text-xl font-bold my-3 transition duration-500 group-hover:text-white">Dans le domaine de la DGDA</h5>
+                                    <p class="transition duration-500 group-hover:text-white">Notre agence en douane vous accorde les facilités selon le besoin et les circonstances et vous fournit toutes les informations concernant les formalités en douane en vous proposant les services suivants : Dédouanement IMPORT et EXPORT rapide dans le respect du délai, Enlèvement d’urgence en cas de besoin et Régularisations Ouverture des licences pour compte de ses clients et en assure le suivi Prise en charge des envois aériens de ses clients</p>
+                                    <a class="mt-auto mx-auto px-3 relative text-primary transition duration-500 group-hover:text-primary z-10 before:absolute before:content-[''] before:w-9 before:h-9 before:top-0 before:left-0 before:rounded-full before:bg-light before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full" href="">Lire plus</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="p-8 bg-white rounded-lg text-center flex flex-col justify-center items-center transition duration-500 hover:bg-primary group">
+                                    <div class="w-24 h-24 bg-light flex items-center justify-center rounded-full text-primary transition duration-500 group-hover:bg-white">
+                                        <i class="fa fa-brain fa-2x"></i>
+                                    </div>
+                                    <h5 class="text-xl font-bold my-3 transition duration-500 group-hover:text-white">Dans le domaine de construction et génie civile</h5>
+                                    <p class="transition duration-500 group-hover:text-white">Principalement les travaux publics et le bâtiment (constructions industrielles, usines, entrepôts….)</p>
+                                    <a class="mt-auto mx-auto px-3 relative text-primary transition duration-500 group-hover:text-primary z-10 before:absolute before:content-[''] before:w-9 before:h-9 before:top-0 before:left-0 before:rounded-full before:bg-light before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full" href="">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4 md:pt-8">
+                            <div>
+                                <div class="p-8 bg-white rounded-lg text-center flex flex-col justify-center items-center transition duration-500 hover:bg-primary group">
+                                    <div class="w-24 h-24 bg-light flex items-center justify-center rounded-full text-primary transition duration-500 group-hover:bg-white">
+                                        <i class="fa fa-brain fa-2x"></i>
+                                    </div>
+                                    <h5 class="text-xl font-bold my-3 transition duration-500 group-hover:text-white">Dans la sous traitance</h5>
+                                    <p class="transition duration-500 group-hover:text-white">-La manne des Braves SARL, procède à l’identification des postes à pourvoir ainsi que le profil des futurs occupants, -Le recrutement du personnel, -La formation du personnel, -La logistique (Fournitures des biens et divers services) -Le suivi administratif auprès des services appropriés -La gestion des fins contrats de travail.</p>
+                                    <a class="mt-auto mx-auto px-3 relative text-primary transition duration-500 group-hover:text-primary z-10 before:absolute before:content-[''] before:w-9 before:h-9 before:top-0 before:left-0 before:rounded-full before:bg-light before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full" href="">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Values Start -->
+    <div id="values" class="container-fluid bg-light py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <div class="lg:col-span-5">
+                    <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Nos Engagements : Intégrité et Excellence</div>
+                    <h1 class="text-4xl font-bold mb-4">La Manne des Braves s'appuie sur des valeurs fondamentales de rigueur, de transparence et de satisfaction client pour chaque opération.</h1>
+                    <p class="mb-4">Nous écartons la corruption comme mode d’acquisition d’un marché et exigeons les diplômes, l’expérience professionnelle, la compétence, la bonne moralité, l’intégrité comme atouts pour faire partie de l’équipe de la Manne des Braves SARL.
+                        Le strict respect de nos clients, la rigueur, la convivialité sont nos atouts pour un partenariat gagnant.
+                        Ceci couronne notre devise : « Votre Satisfaction est notre affaire »
+                    </p>
+                    <a class="inline-block bg-primary text-white rounded-full px-4 py-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Values End -->
+
+
+    <!-- Team Start -->
+    <div id="team" class="container-fluid bg-light py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <div class="lg:col-span-5">
+                    <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Notre Équipe d'Experts à Votre Service</div>
+                    <h1 class="text-4xl font-bold mb-4">Rencontrez les professionnels dévoués de La Manne des Braves, garants de l'efficacité et de la conformité de vos procédures douanières.</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="inline-block bg-primary text-white rounded-full px-4 py-2" href="">Read More</a>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-white text-center rounded p-4 pt-0">
+                                    <img class="img-fluid rounded-full p-4 mx-auto" src="img/team-1.jpg" alt="">
+                                    <h5 class="mb-0">Boris Johnson</h5>
+                                    <small>Founder & CEO</small>
+                                    <div class="flex justify-center mt-3">
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-white text-center rounded p-4 pt-0">
+                                    <img class="img-fluid rounded-full p-4 mx-auto" src="img/team-2.jpg" alt="">
+                                    <h5 class="mb-0">Adam Crew</h5>
+                                    <small>Executive Manager</small>
+                                    <div class="flex justify-center mt-3">
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4 md:pt-8">
+                            <div class="wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-white text-center rounded p-4 pt-0">
+                                    <img class="img-fluid rounded-full p-4 mx-auto" src="img/team-3.jpg" alt="">
+                                    <h5 class="mb-0">Kate Winslet</h5>
+                                    <small>Co Founder</small>
+                                    <div class="flex justify-center mt-3">
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wow fadeIn" data-wow-delay="0.7s">
+                                <div class="bg-white text-center rounded p-4 pt-0">
+                                    <img class="img-fluid rounded-full p-4 mx-auto" src="img/team-4.jpg" alt="">
+                                    <h5 class="mb-0">Cody Gardner</h5>
+                                    <small>Project Manager</small>
+                                    <div class="flex justify-center mt-3">
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white m-1" href=""><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div id="testimonial" class="container-fluid py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+                <div class="lg:col-span-1 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Ce Que Nos Clients Disent de Nous</div>
+                    <h1 class="text-4xl font-bold mb-4">Leurs témoignages reflètent notre engagement envers un service de qualité et la réussite de leurs opérations.</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="inline-block bg-primary text-white rounded-full px-4 py-2" href="">Read More</a>
+                </div>
+                <div class="lg:col-span-1 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-l border-primary pl-5">
+                        <div class="testimonial-item pl-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="text-lg">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 rounded-full" src="img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="pl-3">
+                                    <h5 class="mb-1 font-bold">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item pl-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="text-lg">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 rounded-full" src="img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="pl-3">
+                                    <h5 class="mb-1 font-bold">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item pl-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="text-lg">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 rounded-full" src="img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="pl-3">
+                                    <h5 class="mb-1 font-bold">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Feature Start -->
+
+    <!-- Feature Start -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-dark py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="lg:col-span-1 self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="inline-block border border-white rounded-full text-white px-3 mb-3 text-sm">Why Choose Us</div>
+                    <h1 class="text-white text-4xl font-bold mb-4">We're Best in AI Industry with 10 Years of Experience</h1>
+                    <p class="text-light mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
+                        stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
+                    <div class="flex items-center text-white mb-3">
+                        <div class="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Diam dolor diam ipsum et tempor sit</span>
+                    </div>
+                    <div class="flex items-center text-white mb-3">
+                        <div class="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Diam dolor diam ipsum et tempor sit</span>
+                    </div>
+                    <div class="flex items-center text-white mb-3">
+                        <div class="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Diam dolor diam ipsum et tempor sit</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                        <div>
+                            <div class="flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-home fa-3x text-white"></i>
+                                <div class="ml-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-home fa-3x text-white"></i>
+                                <div class="ml-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-1 self-end text-center lg:text-right wow fadeIn" data-wow-delay="0.5s">
+                    <img class="max-w-full h-auto" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- FAQs Start -->
+    <div id="faqs" class="container-fluid py-5 animate-on-scroll">
+        <div class="container mx-auto py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Vos Questions, Nos Réponses</div>
+                <h1 class="text-4xl font-bold mb-4">Trouvez rapidement les informations essentielles sur nos services, les procédures douanières et les aspects pratiques de notre collaboration.</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <div class="space-y-4" id="accordionFAQ1">
+                        <div class="wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="text-xl font-bold mb-2" id="headingOne">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How to build a website?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="text-xl font-bold mb-2" id="headingTwo">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How long will it take to get a new website?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="text-xl font-bold mb-2" id="headingThree">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you only create HTML websites?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="text-xl font-bold mb-2" id="headingFour">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Will my website be mobile-friendly?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="space-y-4" id="accordionFAQ2">
+                        <div class="wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="text-xl font-bold mb-2" id="headingFive">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Will you maintain my site for me?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="text-xl font-bold mb-2" id="headingSix">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    I’m on a strict budget. Do you have any low cost options?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="text-xl font-bold mb-2" id="headingSeven">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Will you maintain my site for me?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="text-xl font-bold mb-2" id="headingEight">
+                                <button class="flex items-center justify-between w-full py-4 px-5 text-left text-primary bg-light rounded-lg focus:outline-none collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    I’m on a strict budget. Do you have any low cost options?
+                                    <i class="fa fa-plus text-primary"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="p-5">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+
+    <!-- FAQs End -->
+
+
+    <!-- Footer Start -->
+    <div class="relative mt-20">
+        <div class="absolute top-0 -translate-y-1/2 w-full">
+            <svg class="w-full h-auto" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 63.6078C303.5 -21.2026 828.5 -21.2026 1440 63.6078V120H0V63.6078Z" fill="#14183E"/>
+            </svg>
+        </div>
+        <div class="container-fluid bg-dark text-white/50 footer pt-20">
+            <div class="container mx-auto py-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- About -->
+                    <div class="wow fadeIn" data-wow-delay="0.1s">
+                        <a href="index.html" class="inline-block mb-4">
+                            <img src="logo.png" alt="La Manne des Braves Logo" class="h-12">
+                        </a>
+                        <p class="mb-4">Transitaire en douane agréé, offrant des services rapides et fiables sur tout le territoire national.</p>
+                        <div class="flex pt-2 space-x-2">
+                            <a class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-white/50 transition-colors hover:bg-primary hover:text-white" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-white/50 transition-colors hover:bg-primary hover:text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-white/50 transition-colors hover:bg-primary hover:text-white" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-white/50 transition-colors hover:bg-primary hover:text-white" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <h5 class="text-white mb-4 font-bold text-lg">Contact</h5>
+                        <p class="flex items-start mb-2"><i class="fa fa-map-marker-alt mr-3 mt-1"></i>960 Chaussée L.D. Kabila, Lubumbashi</p>
+                        <p class="flex items-center mb-2"><i class="fa fa-phone-alt mr-3"></i>+243 998 170 745</p>
+                        <p class="flex items-center mb-2"><i class="fa fa-envelope mr-3"></i>info@mannedesbraves.com</p>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="wow fadeIn" data-wow-delay="0.5s">
+                        <h5 class="text-white mb-4 font-bold text-lg">Liens Rapides</h5>
+                        <a class="block mb-2 text-white/50 transition-colors hover:text-white" href="#">À propos</a>
+                        <a class="block mb-2 text-white/50 transition-colors hover:text-white" href="#">Nos Services</a>
+                        <a class="block mb-2 text-white/50 transition-colors hover:text-white" href="#">Contactez-nous</a>
+                        <a class="block text-white/50 transition-colors hover:text-white" href="#">FAQ</a>
+                    </div>
+                    <!-- Services -->
+                    <div class="wow fadeIn" data-wow-delay="0.7s">
+                        <h5 class="text-white mb-4 font-bold text-lg">Nos Services</h5>
+                        <a class="block mb-2 text-white/50 transition-colors hover:text-white" href="#">Dédouanement</a>
+                        <a class="block mb-2 text-white/50 transition-colors hover:text-white" href="#">Sous-traitance</a>
+                        <a class="block mb-2 text-white/50 transition-colors hover:text-white" href="#">Construction</a>
+                        <a class="block text-white/50 transition-colors hover:text-white" href="#">Logistique</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto wow fadeIn" data-wow-delay="0.1s">
+                <div class="py-6 text-sm border-t border-white/10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 text-center md:text-left">
+                        <div class="mb-3 md:mb-0">
+                            &copy; <a class="border-b border-transparent transition-colors hover:border-white" href="#">La Manne des Braves</a>, Tous droits réservés.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="hidden fixed bottom-12 right-12 z-50 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Navbar script
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+        const slidebar = document.getElementById('slidebar');
+        const slidebarCloseButton = document.getElementById('slidebar-close-button');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            slidebar.classList.toggle('translate-x-full');
+        });
+
+        slidebarCloseButton.addEventListener('click', () => {
+            slidebar.classList.add('translate-x-full');
+            mobileMenu.classList.add('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll Animation Script
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Photo and Text Carousel
+        $(".photo-text-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1500,
+            margin: 45,
+            dots: true,
+            loop: true,
+            center: true,
+            responsive: {
+                0:{
+                    items:1
+                },
+                768:{
+                    items:2
+                },
+                992:{
+                    items:3
+                }
+            }
+        });
+
+        // Hero Carousel
+        $(".hero-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1500,
+            items: 1,
+            dots: true,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
@@ -104,306 +816,5 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="img/1.webp">
-                    </div>
-                </div>
-
-
-
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3"></div>
-                    <h1 class="mb-4">A propos de nous</h1>
-                    <p class="mb-4 " style="text-align: justify;">La Manne des Braves SARL en sigle « MDB SARL » est un
-                        transitaire en douane agrée sous le numéro 000188 par la DGDA ainsi que l’arrêté ministériel n°
-                        011/CAB/MIN/FIN/98 du 30 Mars 1998 accordant un caractère d’œuvrer sur tout le territoire
-                        national.
-
-                        Pour sa reconnaissance nationale et en conformité avec la loi légale et fiscale, la Manne des
-                        Braves est immatriculée au RCCM sous le numéro RCCM/CD/LSHI/RCCM/15-B-3463, Identification
-                        Nationale 05-H4901-N57665K,
-                        Numéro Impôt A1008059X. Le siège social est situé au 960 de l’avenue Laurent Désiré Kabila, au
-                        deuxième étage du bâtiment Méthodiste communément appelé »LIPAMU », commune et ville de
-                        Lubumbashi dans la province du Haut Katanga, en République Démocratique du Congo. Avec une
-                        représentation à Kinshasa, Matadi, Kasumbalesa et Kolwezi
-                    </p>
-
-
-                    <div class="d-flex align-items-center mt-4">
-                        <a class="btn btn-primary rounded-pill px-4 me-3" href="">Lire plus</a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Service Start -->
-    <div class="container-fluid bg-light mt-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
-                    <h1 class="mb-4">NOS ACTIVITES</h1>
-                    <p class="mb-4">Notre agence en douane vous accorde les facilités selon le besoin et les
-                        circonstances et
-                        vous fournit toutes les informations concernant les formalités en douane en vous proposant les
-                        services suivants :</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Lire plus</a>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                    <div
-                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-robot fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">
-                                            <h5>Dans le domaine de la DGDA</h5>
-                                            <p>Notre agence en douane vous accorde les facilités selon le besoin et les
-                                                circonstances et vous fournit toutes les informations concernant les
-                                                formalités en douane en vous proposant les services suivants :
-                                                Dédouanement IMPORT et EXPORT rapide dans le respect du délai,
-                                                Enlèvement d’urgence en cas de besoin et Régularisations
-                                                Ouverture des licences pour compte de ses clients et en assure le suivi
-                                                Prise en charge des envois aériens de ses clients
-                                            </p>
-                                            <a class="btn px-3 mt-auto mx-auto" href="">Lire plus</a>
-                                    </div>
-
-                                    <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                        <div
-                                            class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                            <div class="service-icon btn-square">
-                                                <i class="fa fa-brain fa-2x"></i>
-                                            </div>
-                                            <h5 class="mb-3">Dans le domaine de construction et génie civile</h5>
-                                            <p>Principalement les travaux publics et le bâtiment (constructions industrielles, usines, entrepôts….)
-                                                
-                                                </p>
-                                            <a class="btn px-3 mt-auto mx-auto" href="">Lire plus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 pt-md-4">
-                            <div class="row g-4">
-                               
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                    <div
-                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-brain fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Dans la sous traitance</h5>
-                                        <p>-La manne des Braves SARL, procède à l’identification des postes à pourvoir ainsi que le profil des futurs occupants,
-                                            -Le recrutement du personnel,
-                                            -La formation du personnel,
-                                            -La logistique (Fournitures des biens et divers services)
-                                            -Le suivi administratif auprès des services appropriés
-                                            -La gestion des fins contrats de travail.
-                                            </p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Lire plus</a>
-                                    </div>
-                                </div>
-
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Team Start -->
-    <div class="container-fluid bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Nos Valeurs</div>
-                    <h1 class="mb-4">Nos valeurs</h1>
-                    <p class="mb-4">Nous écartons la corruption comme mode d’acquisition d’un marché et exigeons les diplômes, l’expérience professionnelle, la compétence, la bonne moralité, l’intégrité comme atouts pour faire partie de l’équipe de la Manne des Braves SARL.
-                        Le strict respect de nos clients, la rigueur, la convivialité sont nos atouts pour un partenariat gagnant.
-                        Ceci couronne notre devise : « Votre Satisfaction est notre affaire »
-                        
-                        </p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Feature Start -->
-    <div class="container-fluid bg-primary feature pt-5">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Nos objectifs</div>
-                    <h1 class="text-white mb-4">Nos objectifs</h1>
-                    <p class="text-light mb-4">Le parcours professionnel, l’expérience ainsi que son entourage commercial ont conduit Monsieur Ghislain BAWOLO BOKANA à exercer comme un rapproché de la Douane  tout en étant Directeur Administratif et des Ressources humaines chevronné dont aléas du parcours l’ont poussé à créer en 2011, cette équipe d’experts conseil en Douane et en ressources humaines pour parier aux lacunes vécus et d’apporter des innovations dans ce secteur dans le but de satisfaire les importateurs , les exportateurs ainsi que les entreprises à asseoir une gestion des ressources humaines efficiente ,
-                         moderne, non conflictuelle dénommée « La Manne des Braves SARL».</p>
-                         <p class="text-light mb-4"> 
-                            Son objet devient ainsi de procéder à toutes les opérations de douane et accises autorisées par la législation congolaise en vigueur(Agence en Douane) import, export, transport, commerce général, entreposage….généralement toutes les opérations de quelque nature qu’elles soient juridiques, économiques et financières, civiles et commerciales se rattachant à l’objet sus-indiqué ou à tout autre objets similaires ou connexes de nature à favoriser directement ou indirectement le but poursuivi par la société , son extension ou son développement , la sous traitance de la main d’œuvre locale et expatriée ainsi  que tous travaux généraux de construction,
-                             de génie civile, publics ou privés, sans exception ni distinction.
-                               </p>
-                   
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
-
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
-                <h1 class="mb-4">Frequently Asked Questions</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ1">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
-                            
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
-                            
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
-                            
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ2">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
-                           
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
-                           
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
-                            
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
-                            
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FAQs Start -->
-
-
-    <!-- Team Start -->
-   
-
-    
-
-    
-
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">La Manne<span class="text-primary">.</span>Des Braves</h1>
-                    </a>
-                    <p class="mb-0">La Manne des Braves SARL en sigle « MDB SARL » est un
-                        transitaire en douane agrée sous le numéro 000188 par la DGDA ainsi que l’arrêté ministériel n°
-                        011/CAB/MIN/FIN/98 du 30 Mars 1998 accordant un caractère d’œuvrer sur tout le territoire
-                        national.r</p>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>960 Chaussée Laurent Désiré Kabila, Immeuble Méthodiste, 2ème étage, Quartier Makutano, Lubumbashi</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+243998170745</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@mannedesbraves.com</p>
-                    <p><i class="fa fa-envelope me-3"></i>mannedesbraves@yahoo.fr</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">La Manne des braves</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
-
 </html>
