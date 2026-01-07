@@ -21,7 +21,7 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
                         </div>
                     </div>
                     <div class="text-center lg:text-right lg:col-span-5">
-                        <img class="mx-auto w-full max-w-md rounded-lg shadow-xl" src="{{ asset($s['image']) }}" alt="{{ $s['title'] }}" loading="lazy">
+                        <img class="mx-auto lg:ml-auto lg:mr-0 w-full max-w-md lg:max-w-none rounded-lg shadow-xl" src="{{ asset($s['image']) }}" alt="{{ $s['title'] }}" loading="lazy">
                     </div>
                 </div>
             @endforeach
