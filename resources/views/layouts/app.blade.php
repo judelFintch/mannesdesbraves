@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@yield('title', 'La Manne des Braves')</title>
+    <meta name="description" content="@yield('meta_description', 'La Manne des Braves — transitaire officiel en RDC offrant dédouanement, logistique et transport.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'douane, transitaire, logistique, RDC')">
+    <meta property="og:title" content="@yield('title', 'La Manne des Braves')">
+    <meta property="og:description" content="@yield('meta_description', 'La Manne des Braves — transitaire officiel en RDC offrant dédouanement, logistique et transport.')">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('img/hero-img.png') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1363C6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="{{ asset('assets/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/custom.css') }}" rel="stylesheet">
+    @livewireStyles
+    <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased min-h-screen w-full flex flex-col">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Aller au contenu</a>
+    @include('partials.nav')
+    <main id="main-content" tabindex="-1" class="pt-16 md:pt-20 flex-1 w-full min-w-0">
+        @yield('content')
+    </main>
+    @include('partials.footer')
+
+    {{-- WhatsApp floating button (config via .env: WHATSAPP_NUMBER & WHATSAPP_TEXT) --}}
+    @include('partials.whatsapp')
+
+    @livewireScripts
+</body>
+</html>
