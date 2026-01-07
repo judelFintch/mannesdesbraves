@@ -12,7 +12,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div class="lg:col-span-4 text-left">
-                <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">{{ __('home.values_title') }}</div>
+                <div class="inline-flex items-center border border-primary rounded-full text-primary px-3 mb-3 text-sm">{{ __('home.values_title') }}</div>
                 <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">{{ __('home.values_heading') }}</h2>
                 <p class="text-slate-600 leading-relaxed">{{ __('home.values_intro') }}</p>
             </div>

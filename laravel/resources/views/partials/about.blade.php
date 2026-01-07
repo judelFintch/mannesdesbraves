@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="lg:col-span-6">
-                <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">{{ __('home.about_title') }}</div>
+                <div class="inline-flex items-center border border-primary rounded-full text-primary px-3 mb-3 text-sm">{{ __('home.about_title') }}</div>
                 <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-slate-900">{{ __('home.about_subtitle') }}</h2>
                 <p class="mb-6 text-slate-600 leading-relaxed text-left">{{ __('home.about_text') }}</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">

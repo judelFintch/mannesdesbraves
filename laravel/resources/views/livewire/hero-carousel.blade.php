@@ -10,7 +10,7 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
             @foreach($slides as $i => $s)
                 <div x-show="idx === {{ $i }}" x-cloak x-transition class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                     <div class="text-center lg:text-left lg:col-span-7">
-                        <div class="inline-block bg-white/10 rounded-full text-white px-3 py-1 mb-3 text-sm">MDB</div>
+                        <div class="inline-flex items-center bg-white/10 rounded-full text-white px-3 py-1 mb-3 text-sm">MDB</div>
                         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">{{ $s['title'] }}</h1>
                         <h2 class="text-2xl md:text-3xl font-semibold text-white/90 mb-4">{{ $s['subtitle'] }}</h2>
                         <p class="text-white/90 mb-6">{{ $s['lead'] }}</p>

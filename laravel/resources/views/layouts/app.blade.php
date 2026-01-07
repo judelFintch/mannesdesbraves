@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +17,10 @@
     <script src="{{ asset('js/main.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
-<body class="antialiased">
+<body class="antialiased min-h-screen w-full flex flex-col">
     <a href="#main-content" class="sr-only focus:not-sr-only">Aller au contenu</a>
     @include('partials.nav')
-    <main id="main-content" tabindex="-1">
+    <main id="main-content" tabindex="-1" class="pt-16 md:pt-20 flex-1 w-full min-w-0">
         @yield('content')
     </main>
     @include('partials.footer')

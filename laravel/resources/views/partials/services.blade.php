@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div class="lg:col-span-4">
-                <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Nos services</div>
+                <div class="inline-flex items-center border border-primary rounded-full text-primary px-3 mb-3 text-sm">Nos services</div>
                 <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">Des solutions complètes pour vos opérations douanières et logistiques</h2>
                 <p class="text-slate-600 leading-relaxed mb-6">Nous couvrons l’ensemble de la chaîne import-export, avec des services clairs et orientés résultats. Chaque intervention vise à sécuriser vos flux, réduire les délais et simplifier vos formalités.</p>
                 <div class="flex flex-col sm:flex-row gap-3">

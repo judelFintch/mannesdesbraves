@@ -9,7 +9,7 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
         <div class="bg-primary text-white rounded-3xl px-6 py-10 md:px-12 md:py-12 shadow-lg">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7 text-left">
-                    <div class="inline-block bg-white/10 rounded-full text-white px-3 mb-3 text-sm">Prêt à avancer ?</div>
+                    <div class="inline-flex items-center bg-white/10 rounded-full text-white px-3 mb-3 text-sm">Prêt à avancer ?</div>
                     <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">Contactez La Manne des Braves SARL dès aujourd’hui</h2>
                     <p class="text-white/90 leading-relaxed">Notre équipe est disponible et réactive pour étudier votre besoin et vous proposer une solution claire, efficace et conforme.</p>
                 </div>

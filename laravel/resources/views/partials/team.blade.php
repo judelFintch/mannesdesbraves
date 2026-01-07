@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div class="lg:col-span-5 text-left">
-                <div class="inline-block border border-primary rounded-full text-primary px-3 mb-3 text-sm">Notre engagement</div>
+                <div class="inline-flex items-center border border-primary rounded-full text-primary px-3 mb-3 text-sm">Notre engagement</div>
                 <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">Des standards élevés pour une relation de confiance durable</h2>
                 <p class="text-slate-600 leading-relaxed">Nous opérons avec rigueur, intégrité et professionnalisme. Chaque mission est traitée dans le respect des normes en vigueur, avec un objectif clair : sécuriser vos opérations et votre réputation.</p>
             </div>
