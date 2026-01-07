@@ -24,6 +24,10 @@
         @yield('content')
     </main>
     @include('partials.footer')
+
+    {{-- WhatsApp floating button (config via .env: WHATSAPP_NUMBER & WHATSAPP_TEXT) --}}
+    @include('partials.whatsapp')
+
     @livewireScripts
 </body>
 </html>

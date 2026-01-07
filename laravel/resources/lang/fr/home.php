@@ -29,4 +29,22 @@ return [
     ],
     'about_text' => "La Manne des Braves SARL est une entreprise spécialisée dans le transit, le dédouanement et la logistique en République Démocratique du Congo. Avec une expérience éprouvée et un réseau opérationnel sur l'ensemble du territoire, nous accompagnons importateurs et exportateurs pour assurer un acheminement sécurisé, conforme et ponctuel de leurs marchandises. Notre équipe veille à la conformité réglementaire à chaque étape et propose des solutions adaptées aux besoins de nos clients.",
 
+    // Homepage specific copy
+    'meta_title' => 'La Manne des Braves — Transitaire et logistique en RDC',
+    'meta_description' => 'La Manne des Braves SARL — transit, dédouanement et transport en République Démocratique du Congo. Demandez un devis gratuit pour vos opérations douanières.',
+    'hero_tag' => 'Transitaire Officiel en RD Congo',
+    'hero_sub' => 'Simplifiez vos formalités douanières et logistiques grâce à notre expertise locale et notre réseau national.',
+    'hero_cta_primary' => 'Nos Services',
+    'hero_cta_secondary' => 'Demander un devis',
+
+    'values_title' => 'Nos engagements : intégrité et excellence',
+    'values_heading' => 'La confiance par la qualité de service',
+    'values_intro' => 'Intégrité, transparence et excellence guident chacune de nos actions. Nous privilégions le professionnalisme ainsi qu’un service client de qualité.',
+    'values' => [
+        ['title' => 'Conformité & Sécurité', 'desc' => 'Respect strict des réglementations douanières et garanties sur vos cargaisons.'],
+        ['title' => 'Réseau National', 'desc' => 'Présence opérationnelle à Kinshasa, Matadi, Kasumbalesa, Kolwezi et Lubumbashi.'],
+        ['title' => 'Accompagnement dédié', 'desc' => 'Conseil personnalisé et suivi de vos dossiers du départ à la livraison.'],
+    ],
+
+
 ];
