@@ -5,11 +5,11 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
 @endphp
 
 <section class="bg-gradient-to-r from-primary/90 to-primary/80 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div x-data="{ idx: @entangle('current') }" x-init="setInterval(()=> idx = (idx + 1) % {{ count($slides) }}, 7000)" class="relative">
             @foreach($slides as $i => $s)
-                <div x-show="idx === {{ $i }}" x-cloak x-transition class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div class="text-center lg:text-left">
+                <div x-show="idx === {{ $i }}" x-cloak x-transition class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="text-center lg:text-left lg:col-span-7">
                         <div class="inline-block bg-white/10 rounded-full text-white px-3 py-1 mb-3 text-sm">MDB</div>
                         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">{{ $s['title'] }}</h1>
                         <h2 class="text-2xl md:text-3xl font-semibold text-white/90 mb-4">{{ $s['subtitle'] }}</h2>
@@ -20,7 +20,7 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
                             <a href="{{ $whatsappLink }}" class="rounded-full px-6 py-3 font-semibold bg-[#25D366] text-white" target="_blank" rel="noopener">WhatsApp</a>
                         </div>
                     </div>
-                    <div class="text-center lg:text-right">
+                    <div class="text-center lg:text-right lg:col-span-5">
                         <img class="mx-auto w-full max-w-md rounded-lg shadow-xl" src="{{ asset($s['image']) }}" alt="{{ $s['title'] }}" loading="lazy">
                     </div>
                 </div>

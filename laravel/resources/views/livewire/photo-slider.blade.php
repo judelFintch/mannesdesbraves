@@ -1,9 +1,9 @@
-<section class="bg-slate-50 py-12 md:py-16 photo-slider">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div class="order-2 lg:order-1">
+<section class="bg-slate-50 py-16 photo-slider">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="order-2 lg:order-1 lg:col-span-7">
                 <div x-data="{ idx: @entangle('current') }" x-init="() => { setInterval(()=> idx = (idx + 1) % {{ count($slides) }}, 6000); }" tabindex="0" x-on:keydown.arrow-right="$wire.next()" x-on:keydown.arrow-left="$wire.prev()" class="relative focus:outline-none">
-                    <div class="relative overflow-hidden rounded-2xl shadow-lg bg-slate-100 aspect-video ring-1 ring-slate-200">
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg bg-slate-100 aspect-[4/3] ring-1 ring-slate-200">
                         @foreach($slides as $i => $slide)
                             <div x-show="idx === {{ $i }}" x-cloak x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0 transform translate-y-2" x-transition:enter-end="opacity-100 transform translate-y-0" class="absolute inset-0 w-full h-full">
                                 <img class="w-full h-full object-cover" src="{{ asset($slide['image']) }}" alt="{{ $slide['alt'] }}" loading="lazy">
@@ -38,28 +38,37 @@
                 </div>
             </div>
 
-            <div class="order-1 lg:order-2">
-                <div class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 p-6 md:p-8">
+            <div class="order-1 lg:order-2 lg:col-span-5">
+                <div class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 p-6 md:p-8 text-left">
                     <div class="inline-flex items-center gap-2 border border-primary rounded-full text-primary px-3 py-1 text-xs font-semibold uppercase tracking-wide">Présentation</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-4 mb-4">Parcourez nos réalisations</h2>
-                    <p class="text-slate-600 mb-6">Aperçu de nos opérations douanières et logistiques. Des images concrètes qui illustrent notre rigueur sur le terrain.</p>
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mt-4 mb-4">Parcourez nos réalisations</h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">Aperçu de nos opérations douanières et logistiques. Des images concrètes qui illustrent notre rigueur sur le terrain.</p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                        <div class="rounded-xl bg-slate-50 p-4 text-center">
-                            <div class="text-primary font-semibold">Flux fiables</div>
+                        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 p-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary mb-3">
+                                <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M6 12v6m12-6v6M6 6h12v6H6z"/></svg>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-900">Flux fiables</div>
                             <div class="text-xs text-slate-500">Suivi et coordination</div>
                         </div>
-                        <div class="rounded-xl bg-slate-50 p-4 text-center">
-                            <div class="text-primary font-semibold">Conformité</div>
+                        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 p-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary mb-3">
+                                <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-900">Conformité</div>
                             <div class="text-xs text-slate-500">Procédures claires</div>
                         </div>
-                        <div class="rounded-xl bg-slate-50 p-4 text-center">
-                            <div class="text-primary font-semibold">Réactivité</div>
+                        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 p-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary mb-3">
+                                <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v6l4 2M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z"/></svg>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-900">Réactivité</div>
                             <div class="text-xs text-slate-500">Délais maîtrisés</div>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="btn-primary text-center">Demander un devis</a>
-                        <a href="#contact" class="btn-outline text-center">Nous contacter</a>
+                        <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="rounded-full bg-primary text-white px-6 py-3 text-sm font-semibold shadow-sm">Demander un devis</a>
+                        <a href="#contact" class="rounded-full border border-primary text-primary px-6 py-3 text-sm font-semibold">Nous contacter</a>
                     </div>
                 </div>
             </div>
