@@ -4,10 +4,10 @@
 
 @section('content')
     @include('partials.hero')
-    <livewire:photo-slider />
     @include('partials.about')
     @include('partials.services')
     @include('partials.values')
+    <livewire:photo-slider />
     @include('partials.team')
     @include('partials.testimonial')
 @endsection
