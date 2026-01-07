@@ -1,3 +1,9 @@
+@php
+$wa = env('WHATSAPP_NUMBER', '243XXXXXXXXX');
+$waText = env('WHATSAPP_TEXT', "Bonjour, j'aimerais avoir des informations sur vos services.");
+$whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
+@endphp
+
 <section class="bg-gradient-to-r from-primary/90 to-primary/80 text-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
         <div x-data="{ idx: @entangle('current') }" x-init="setInterval(()=> idx = (idx + 1) % {{ count($slides) }}, 7000)" class="relative">
@@ -6,9 +12,12 @@
                     <div class="text-center lg:text-left">
                         <div class="inline-block bg-white/10 rounded-full text-white px-3 py-1 mb-3 text-sm">MDB</div>
                         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">{{ $s['title'] }}</h1>
+                        <h2 class="text-2xl md:text-3xl font-semibold text-white/90 mb-4">{{ $s['subtitle'] }}</h2>
                         <p class="text-white/90 mb-6">{{ $s['lead'] }}</p>
                         <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
-                            <a href="{{ $s['cta_link'] }}" class="btn-primary">{{ $s['cta'] }}</a>
+                            <a href="{{ __('home.hero_cta_primary_link') }}" class="btn-primary">{{ __('home.hero_cta_primary') }}</a>
+                            <a href="{{ __('home.hero_cta_secondary_link') }}" class="btn-outline">{{ __('home.hero_cta_secondary') }}</a>
+                            <a href="{{ $whatsappLink }}" class="rounded-full px-6 py-3 font-semibold bg-[#25D366] text-white" target="_blank" rel="noopener">WhatsApp</a>
                         </div>
                     </div>
                     <div class="text-center lg:text-right">

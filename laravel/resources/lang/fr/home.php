@@ -3,23 +3,25 @@
 return [
     'slides' => [
         [
-            'title' => 'Transitaire Officiel en RD Congo',
-            'lead' => "La Manne des Braves simplifie vos formalités douanières et logistiques — rapidité, conformité et sécurité dans chaque envoi.",
-            'cta' => 'Nos Services',
-            'cta_link' => '#services',
+            'title' => 'Transit & logistique douanière fiables depuis Lubumbashi',
+            'subtitle' => 'Votre partenaire agréé pour sécuriser vos opérations import-export',
+            'lead' => "La Manne des Braves SARL (MDB SARL) accompagne entreprises et particuliers dans le dédouanement, le transport et la logistique, en RDC et à l’international.",
+            'cta' => 'Demander un devis',
+            'cta_link' => '/contact',
             'image' => 'img/hero-img.png',
         ],
         [
-            'title' => 'Simplifiez Vos Opérations Douanières',
-            'lead' => "Votre partenaire de confiance pour des formalités douanières rapides et efficaces en RDC.",
-            'cta' => 'Demander un devis',
+            'title' => 'Conformité, rapidité, transparence',
+            'subtitle' => 'Des procédures claires et un suivi rigoureux à chaque étape',
+            'lead' => "Nous gérons vos formalités et vos flux logistiques avec méthode, pour réduire les délais et sécuriser vos marchandises.",
+            'cta' => 'Nous contacter',
             'cta_link' => '/contact',
             'image' => 'img/1.png',
         ],
     ],
 
-    'about_title' => 'À propos de La Manne des Braves',
-    'about_subtitle' => 'Découvrez notre histoire, notre agrément officiel et notre engagement.',
+    'about_title' => 'Présentation',
+    'about_subtitle' => 'La Manne des Braves SARL, transitaire agréé en RDC',
 
     'nav' => [
         'home' => 'Accueil',
@@ -27,24 +29,37 @@ return [
         'projects' => 'Projets',
         'contact' => 'Contact',
     ],
-    'about_text' => "La Manne des Braves SARL est une entreprise spécialisée dans le transit, le dédouanement et la logistique en République Démocratique du Congo. Avec une expérience éprouvée et un réseau opérationnel sur l'ensemble du territoire, nous accompagnons importateurs et exportateurs pour assurer un acheminement sécurisé, conforme et ponctuel de leurs marchandises. Notre équipe veille à la conformité réglementaire à chaque étape et propose des solutions adaptées aux besoins de nos clients.",
+    'about_text' => "La Manne des Braves SARL (MDB SARL) est une entreprise de transit et de transport en douane basée à Lubumbashi. En tant que transitaire agréé, nous assurons la gestion complète des formalités douanières et de la logistique pour les opérations d’import et d’export. Notre expertise locale et internationale nous permet d’offrir un accompagnement fiable, adapté aux exigences des corridors régionaux et des échanges internationaux.",
 
     // Homepage specific copy
-    'meta_title' => 'La Manne des Braves — Transitaire et logistique en RDC',
-    'meta_description' => 'La Manne des Braves SARL — transit, dédouanement et transport en République Démocratique du Congo. Demandez un devis gratuit pour vos opérations douanières.',
-    'hero_tag' => 'Transitaire Officiel en RD Congo',
-    'hero_sub' => 'Simplifiez vos formalités douanières et logistiques grâce à notre expertise locale et notre réseau national.',
-    'hero_cta_primary' => 'Nos Services',
-    'hero_cta_secondary' => 'Demander un devis',
+    'meta_title' => 'La Manne des Braves - Transit, douane et logistique en RDC',
+    'meta_description' => 'La Manne des Braves SARL - transit, dédouanement et transport en RDC. Procédures claires, conformité et réactivité pour vos opérations import-export.',
+    'hero_tag' => 'Transitaire agréé en RDC',
+    'hero_sub' => 'Dédouanement, transport et logistique avec un suivi clair et une conformité maîtrisée.',
+    'hero_cta_primary' => 'Demander un devis',
+    'hero_cta_primary_link' => '/contact',
+    'hero_cta_secondary' => 'Nous contacter',
+    'hero_cta_secondary_link' => '#contact',
+    'hero_cta_whatsapp' => 'WhatsApp',
 
-    'values_title' => 'Nos engagements : intégrité et excellence',
-    'values_heading' => 'La confiance par la qualité de service',
-    'values_intro' => 'Intégrité, transparence et excellence guident chacune de nos actions. Nous privilégions le professionnalisme ainsi qu’un service client de qualité.',
+    'values_title' => 'Pourquoi nous choisir ?',
+    'values_heading' => 'Des garanties concrètes pour vos opérations',
+    'values_intro' => 'Nous combinons expertise douanière, rigueur opérationnelle et transparence pour sécuriser vos flux.',
     'values' => [
-        ['title' => 'Conformité & Sécurité', 'desc' => 'Respect strict des réglementations douanières et garanties sur vos cargaisons.'],
-        ['title' => 'Réseau National', 'desc' => 'Présence opérationnelle à Kinshasa, Matadi, Kasumbalesa, Kolwezi et Lubumbashi.'],
-        ['title' => 'Accompagnement dédié', 'desc' => 'Conseil personnalisé et suivi de vos dossiers du départ à la livraison.'],
+        ['title' => 'Expertise douanière', 'desc' => 'Maîtrise des procédures locales et internationales pour limiter les risques.'],
+        ['title' => 'Conformité réglementaire', 'desc' => 'Dossiers préparés avec rigueur pour éviter les litiges et retards.'],
+        ['title' => 'Rapidité d’exécution', 'desc' => 'Traitement efficace pour respecter vos délais opérationnels.'],
+        ['title' => 'Transparence des procédures', 'desc' => 'Suivi clair à chaque étape, sans zones d’ombre.'],
+        ['title' => 'Accompagnement personnalisé', 'desc' => 'Un interlocuteur dédié et des solutions adaptées à vos besoins.'],
     ],
+
+    // Contact form labels
+    'contact_title' => 'Contactez-nous',
+    'contact_intro' => 'Remplissez le formulaire ci-dessous pour nous envoyer un message.',
+    'label_name' => 'Nom',
+    'label_email' => 'Email',
+    'label_message' => 'Message',
+    'button_send' => 'Envoyer',
 
 
 ];

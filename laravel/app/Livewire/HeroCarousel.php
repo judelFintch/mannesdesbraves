@@ -18,6 +18,7 @@ class HeroCarousel extends Component
             $this->slides = array_map(function($s) {
                 return array_merge([
                     'title' => $s['title'] ?? '',
+                    'subtitle' => $s['subtitle'] ?? '',
                     'lead' => $s['lead'] ?? '',
                     'cta' => $s['cta'] ?? '',
                     'cta_link' => $s['cta_link'] ?? '#',
@@ -27,8 +28,8 @@ class HeroCarousel extends Component
         } else {
             // Fallback to default defined in code
             $this->slides = [
-                ['title' => 'Transitaire Officiel en RD Congo', 'lead' => 'La Manne des Braves simplifie vos formalités douanières et logistiques.', 'cta' => 'Nos Services', 'cta_link' => '#services', 'image' => 'img/hero-img.png'],
-                ['title' => 'Simplifiez Vos Opérations Douanières', 'lead' => "Votre partenaire de confiance pour des formalités douanières rapides et efficaces en RDC.", 'cta' => 'Demander un devis', 'cta_link' => '/contact', 'image' => 'img/1.png'],
+                ['title' => 'Transitaire Officiel en RD Congo', 'subtitle' => 'Formalités douanières et logistique maîtrisées', 'lead' => 'La Manne des Braves simplifie vos formalités douanières et logistiques.', 'cta' => 'Nos Services', 'cta_link' => '#services', 'image' => 'img/hero-img.png'],
+                ['title' => 'Simplifiez Vos Opérations Douanières', 'subtitle' => 'Un partenaire fiable pour vos flux import-export', 'lead' => "Votre partenaire de confiance pour des formalités douanières rapides et efficaces en RDC.", 'cta' => 'Demander un devis', 'cta_link' => '/contact', 'image' => 'img/1.png'],
             ];
         }
     }
