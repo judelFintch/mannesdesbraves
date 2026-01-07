@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts used by the original site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Ubuntu:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+html { font-family: 'Inter', 'Ubuntu', 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+/* Small components and utility tweaks */
+.btn-primary { @apply bg-primary text-white font-semibold rounded-full px-6 py-3 shadow; }
+.btn-outline { @apply bg-white text-primary border border-primary rounded-full px-6 py-3; }
+.section-title { @apply text-3xl md:text-4xl font-bold text-dark mb-2; }
+.section-sub { @apply text-muted mb-6; }
+
+/* Slider and testimonial helpers */
+.testimonial-quote { @apply text-xl text-muted; }
+.testimonial-author { @apply font-semibold; }
+.testimonial-role { @apply text-sm text-muted; }
