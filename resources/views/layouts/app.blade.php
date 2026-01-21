@@ -10,7 +10,7 @@
     <meta property="og:description" content="@yield('meta_description', 'La Manne des Braves — transitaire officiel en RDC offrant dédouanement, logistique et transport.')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('img/hero-img.png') }}">
+    <meta property="og:image" content="{{ asset('img/web1.webp') }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#1363C6">
     <link rel="preconnect" href="https://fonts.googleapis.com">

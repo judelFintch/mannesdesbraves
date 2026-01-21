@@ -12,33 +12,36 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
                     <div class="text-center lg:text-left lg:col-span-7">
                         <div class="badge badge-light mb-2">Transitaire officiel</div>
                         <div class="text-xs text-white/80 mb-4">Agrement DGDA 000188 | RDC</div>
-                        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">{{ $s['title'] }}</h1>
-                        <h2 class="text-2xl md:text-3xl font-semibold text-white/90 mb-4">{{ $s['subtitle'] }}</h2>
-                        <p class="text-white/90 mb-6">{{ $s['lead'] }}</p>
+                        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-3">{{ $s['title'] }}</h1>
+                        <p class="text-lg md:text-xl font-semibold text-white/90 mb-3">{{ $s['subtitle'] }}</p>
+                        <p class="text-white/90 mb-6 max-w-xl mx-auto lg:mx-0">{{ $s['lead'] }}</p>
                         <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
                             <a href="{{ __('home.hero_cta_primary_link') }}" class="btn-base btn-primary">{{ __('home.hero_cta_primary') }}</a>
-                            <a href="{{ __('home.hero_cta_secondary_link') }}" class="btn-base btn-outline">{{ __('home.hero_cta_secondary') }}</a>
-                            <a href="{{ $whatsappLink }}" class="btn-base btn-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+                        </div>
+                        <div class="mt-3 text-sm text-white/80">
+                            <a href="{{ __('home.hero_cta_secondary_link') }}" class="underline hover:text-white">{{ __('home.hero_cta_secondary') }}</a>
+                        </div>
+                        <div class="mt-6 flex flex-wrap gap-3 text-xs text-white/80">
+                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Dedouanement express</span>
+                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Suivi dossier 24/7</span>
+                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Corridors RDC</span>
                         </div>
                         <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
                             <div class="hero-panel">
-                                <div class="text-sm font-semibold">Dédouanement rapide</div>
-                                <div class="text-xs text-white/80">Procédures sécurisées</div>
+                                <div class="stat-number stat-number-light" data-count="12">12+</div>
+                                <div class="text-xs text-white/80">annees d'experience</div>
                             </div>
                             <div class="hero-panel">
-                                <div class="text-sm font-semibold">Suivi continu</div>
-                                <div class="text-xs text-white/80">Infos claires, sans délais</div>
+                                <div class="stat-number stat-number-light" data-count="850">850+</div>
+                                <div class="text-xs text-white/80">dossiers par an</div>
                             </div>
                             <div class="hero-panel">
-                                <div class="text-sm font-semibold">Couverture RDC</div>
-                                <div class="text-xs text-white/80">Corridors clés maîtrisés</div>
+                                <div class="stat-number stat-number-light" data-count="9">9</div>
+                                <div class="text-xs text-white/80">corridors couverts</div>
                             </div>
                         </div>
-                        <div class="mt-6 flex flex-wrap gap-3 text-xs text-white/80">
-                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Dédouanement</span>
-                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Logistique</span>
-                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Transport</span>
-                            <span class="px-3 py-1 rounded-full border border-white/30 bg-white/10">Assistance licences</span>
+                        <div class="mt-5 text-xs text-white/70">
+                            <a href="{{ $whatsappLink }}" class="underline hover:text-white" target="_blank" rel="noopener">Ecrire sur WhatsApp</a>
                         </div>
                     </div>
                     <div class="text-center lg:text-right lg:col-span-5">

@@ -40,4 +40,40 @@
             });
         });
     }
+
+    const counters = document.querySelectorAll("[data-count]");
+    if (counters.length) {
+        const animateCounter = (el) => {
+            const endValue = parseInt(el.dataset.count, 10);
+            if (Number.isNaN(endValue)) return;
+            const suffix = el.textContent.replace(/[0-9]/g, "").trim();
+            const duration = 1200;
+            const startTime = performance.now();
+
+            const step = (now) => {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const value = Math.floor(progress * endValue);
+                el.textContent = `${value}${suffix}`;
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            };
+
+            requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver(
+            (entries, obs) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        obs.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.6 }
+        );
+
+        counters.forEach((counter) => observer.observe(counter));
+    }
 })();

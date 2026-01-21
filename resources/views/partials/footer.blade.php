@@ -17,6 +17,8 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
                     <a href="{{ route('home', ['locale' => app()->getLocale()]) }}">{{ __('home.nav.home') }}</a>
                     <a href="{{ route('home', ['locale' => app()->getLocale()]) }}#about">{{ __('home.nav.about') }}</a>
                     <a href="{{ route('projects', ['locale' => app()->getLocale()]) }}">{{ __('home.nav.projects') }}</a>
+                    <a href="{{ route('process', ['locale' => app()->getLocale()]) }}">Processus</a>
+                    <a href="{{ route('faq', ['locale' => app()->getLocale()]) }}">FAQ</a>
                     <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}">{{ __('home.nav.contact') }}</a>
                 </div>
             </div>

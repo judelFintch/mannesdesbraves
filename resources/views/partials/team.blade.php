@@ -6,7 +6,7 @@
                 <h2 class="section-title mb-4">Des standards élevés pour une relation de confiance durable</h2>
                 <p class="text-slate-600 leading-relaxed">Nous opérons avec rigueur, intégrité et professionnalisme. Chaque mission est traitée dans le respect des normes en vigueur, avec un objectif clair : sécuriser vos opérations et votre réputation.</p>
                 <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <img src="{{ asset('img/1.webp') }}" alt="Equipe engagee" class="w-full h-44 object-cover" loading="lazy" decoding="async" width="480" height="260">
+                    <img src="{{ asset('img/web1.webp') }}" alt="Equipe engagee" class="w-full h-44 object-cover" loading="lazy" decoding="async" width="480" height="260">
                 </div>
             </div>
             <div class="lg:col-span-7">

@@ -7,7 +7,7 @@
         <div class="owl-carousel photo-text-carousel">
             <div class="item">
                 <div class="relative overflow-hidden rounded-lg shadow-lg">
-                    <img class="w-full h-64 object-cover" src="{{ asset('img/project-1.jpg') }}" alt="Project 1 — Robotic Automation" loading="lazy">
+                    <img class="w-full h-64 object-cover" src="{{ asset('img/web1.webp') }}" alt="Project 1 — Robotic Automation" loading="lazy">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-bold mb-2">Project Title One</h3>
                         <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -16,7 +16,7 @@
             </div>
             <div class="item">
                 <div class="relative overflow-hidden rounded-lg shadow-lg">
-                    <img class="w-full h-64 object-cover" src="{{ asset('img/project-2.jpg') }}" alt="Project 2 — Machine Learning" loading="lazy">
+                    <img class="w-full h-64 object-cover" src="{{ asset('img/web1.webp') }}" alt="Project 2 — Machine Learning" loading="lazy">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-bold mb-2">Project Title Two</h3>
                         <p class="text-sm">Ut enim ad minim veniam.</p>
@@ -25,7 +25,7 @@
             </div>
             <div class="item">
                 <div class="relative overflow-hidden rounded-lg shadow-lg">
-                    <img class="w-full h-64 object-cover" src="{{ asset('img/project-3.jpg') }}" alt="Project 3 — Predictive Analysis" loading="lazy">
+                    <img class="w-full h-64 object-cover" src="{{ asset('img/web1.webp') }}" alt="Project 3 — Predictive Analysis" loading="lazy">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-bold mb-2">Project Title Three</h3>
                         <p class="text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>

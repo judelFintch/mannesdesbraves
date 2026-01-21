@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div class="lg:col-span-6">
                 <div class="relative overflow-hidden rounded-2xl shadow-sm ring-1 ring-slate-200 bg-slate-100">
-                    <img class="w-full h-auto" src="{{ asset('img/1.webp') }}" alt="Image illustrant notre expertise" loading="lazy" decoding="async">
+                    <img class="w-full h-auto" src="{{ asset('img/web1.webp') }}" alt="Equipe et expertise douaniere" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="lg:col-span-6">

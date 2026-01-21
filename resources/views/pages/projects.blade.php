@@ -15,21 +15,21 @@
                 <div class="lg:col-span-8">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="card overflow-hidden">
-                            <img src="{{ asset('img/project-1.jpg') }}" alt="Transit sécurisé pour matériel industriel" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="480" height="320">
+                            <img src="{{ asset('img/web1.webp') }}" alt="Transit sécurisé pour matériel industriel" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="480" height="320">
                             <div class="p-5">
                                 <h3 class="font-semibold text-slate-900 mb-1">Transit industriel sécurisé</h3>
                                 <p class="text-sm text-slate-600">Coordination douanière + transport pour réduire les délais critiques.</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="{{ asset('img/project-2.jpg') }}" alt="Dédouanement multi-sites en RDC" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="480" height="320">
+                            <img src="{{ asset('img/web1.webp') }}" alt="Dédouanement multi-sites en RDC" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="480" height="320">
                             <div class="p-5">
                                 <h3 class="font-semibold text-slate-900 mb-1">Dédouanement multi-sites</h3>
                                 <p class="text-sm text-slate-600">Gestion documentaire et conformité sur plusieurs points d’entrée.</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="{{ asset('img/project-3.jpg') }}" alt="Logistique de dernière ligne" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="480" height="320">
+                            <img src="{{ asset('img/web1.webp') }}" alt="Logistique de dernière ligne" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="480" height="320">
                             <div class="p-5">
                                 <h3 class="font-semibold text-slate-900 mb-1">Logistique de dernière ligne</h3>
                                 <p class="text-sm text-slate-600">Suivi terrain et coordination transport pour livraisons sensibles.</p>

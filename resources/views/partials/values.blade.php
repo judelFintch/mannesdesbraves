@@ -1,16 +1,16 @@
 <section id="values" class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            <div class="lg:col-span-4 text-left">
+            <div class="lg:col-span-5 text-left">
                 <div class="badge mb-4">Nos valeurs</div>
                 <h2 class="section-title mb-4">Integrite, rigueur, respect</h2>
                 <p class="text-slate-600 leading-relaxed">Notre devise : "Votre Satisfaction est notre affaire".</p>
                 <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <img src="{{ asset('img/1.webp') }}" alt="Equipe et valeurs" class="w-full h-44 object-cover" loading="lazy" decoding="async" width="480" height="260">
+                    <img src="{{ asset('img/web1.webp') }}" alt="Equipe et valeurs" class="w-full h-44 object-cover" loading="lazy" decoding="async" width="480" height="260">
                 </div>
             </div>
 
-            <div class="lg:col-span-8">
+            <div class="lg:col-span-7">
                 <div class="card p-6 text-left">
                     <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary mb-4">
                         <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg>
@@ -25,16 +25,16 @@
 <section id="objectifs" class="section-contrast py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            <div class="lg:col-span-4 text-left">
+            <div class="lg:col-span-5 text-left">
                 <div class="badge mb-4">Nos objectifs</div>
                 <h2 class="section-title mb-4">Professionnalisme et expertise d'abord</h2>
                 <p class="text-slate-600 leading-relaxed">Une equipe d'experts pour garantir une gestion moderne, efficace et sans conflit.</p>
                 <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <img src="{{ asset('img/1.webp') }}" alt="Expertise professionnelle" class="w-full h-44 object-cover" loading="lazy" decoding="async" width="480" height="260">
+                    <img src="{{ asset('img/web1.webp') }}" alt="Expertise professionnelle" class="w-full h-44 object-cover" loading="lazy" decoding="async" width="480" height="260">
                 </div>
             </div>
 
-            <div class="lg:col-span-8">
+            <div class="lg:col-span-7">
                 <div class="card p-6 text-left">
                     <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary mb-4">
                         <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16v10H4z"/><path d="M7 10h10M7 14h6"/></svg>

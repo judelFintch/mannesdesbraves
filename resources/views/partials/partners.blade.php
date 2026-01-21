@@ -8,7 +8,7 @@
             <div class="flex items-center gap-4">
                 <p class="text-sm text-slate-500 lg:max-w-md">Logos exemples a remplacer par vos partenaires reels.</p>
                 <div class="hidden lg:block overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-                    <img src="{{ asset('img/1.webp') }}" alt="Partenaires et collaboration" class="w-28 h-20 object-cover" loading="lazy" decoding="async" width="112" height="80">
+                    <img src="{{ asset('img/web1.webp') }}" alt="Partenaires et collaboration" class="w-28 h-20 object-cover" loading="lazy" decoding="async" width="112" height="80">
                 </div>
             </div>
         </div>
