@@ -15,8 +15,13 @@ Route::get('/{locale?}', function ($locale = null) {
 })->where('locale', 'fr|en')->name('home');
 
 Route::get('/{locale?}/contact', [PageController::class, 'contact'])->where('locale', 'fr|en')->name('contact');
-Route::post('/{locale?}/contact', [PageController::class, 'contactSubmit'])->where('locale', 'fr|en')->name('contact.send');
+Route::post('/{locale?}/contact', [PageController::class, 'contactSubmit'])
+    ->middleware('throttle:5,5')
+    ->where('locale', 'fr|en')
+    ->name('contact.send');
 Route::get('/{locale?}/projects', [PageController::class, 'projects'])->where('locale', 'fr|en')->name('projects');
+Route::get('/{locale?}/process', [PageController::class, 'process'])->where('locale', 'fr|en')->name('process');
+Route::get('/{locale?}/faq', [PageController::class, 'faq'])->where('locale', 'fr|en')->name('faq');
 
 // Fallback for 404 (no locale prefix assumed)
 Route::fallback(function () {
