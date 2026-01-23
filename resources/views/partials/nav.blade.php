@@ -7,8 +7,8 @@
 <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/85 border-b border-slate-200 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <nav class="flex items-center justify-between" role="navigation" aria-label="Main navigation">
-            <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="flex items-center">
-                <img src="{{ asset('logo.png') }}" alt="La Manne des Braves — logo" class="h-8">
+            <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="flex items-center text-lg font-semibold tracking-wide text-slate-900">
+                La Manne des Braves
             </a>
             <div class="hidden lg:flex items-center space-x-6">
                 <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="text-sm font-medium {{ $isHome ? 'text-slate-900' : 'text-slate-600 hover:text-slate-900' }}" @if($isHome) aria-current="page" @endif>{{ __('home.nav.home') }}</a>

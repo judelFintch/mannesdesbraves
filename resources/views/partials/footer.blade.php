@@ -8,7 +8,7 @@ $whatsappLink = 'https://wa.me/' . $wa . '?text=' . urlencode($waText);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-left text-sm text-gray-600">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="lg:col-span-2">
-                <img src="{{ asset('logo.png') }}" alt="La Manne des Braves" class="h-9 mb-4">
+                <div class="text-lg font-semibold tracking-wide text-slate-900 mb-4">La Manne des Braves</div>
                 <p class="text-gray-600 leading-relaxed">Transitaire officiel en RDC, nous sécurisons vos opérations douanières, logistiques et transport avec un accompagnement rigoureux et transparent.</p>
             </div>
             <div>
